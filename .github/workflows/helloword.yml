@@ -16,5 +16,8 @@ jobs:
                 - name: install libs
                   run: pip install -r requeriments.txt
 
+                - name: update
+                  run: choco install python
+
                 - name: Ejecutar codigo de python
                   run: python3 app.py
